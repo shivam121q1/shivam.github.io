@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../public/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="">PORTFOLIO</a></div>
+      <nav>
+        <ul>
+          <li class="Home"><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section>
+      <div class="main">
+        <div class="img-container">
+          <img src="../images/WhatsApp_Image_2023-12-20_at_14.10.32-removebg-preview.png" alt="profile photo" />
+        </div>
+        <div><h1>I am <span class="name">SHIVAM PAL</span></h1>
+          <h3 class="fs">Full Stack Developer</h3>
+          <p>
+            I am a web developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices.
+          </p>
+          <div class="Social">
+               <img id="ld" onclick="social(this.id)"   src="../images/linkedin.svg" alt="Linkedin">
+              <img id="fb" onclick="social(this.id)" src="../images/facebook.svg" alt="Facebook">
+              <img id="gh" onclick="social(this.id)" src="../images/github.svg" alt="Github">
+              <img id="ig" onclick="social(this.id)" src="../images/insta.svg" alt="Instagram">
+          </div> 
+        </div>
+        
+      </div>
+    </section>
+    <section class="projects">
+      <div class="headinh"><h2>Projects</h2></div>
+      <div class="project-card-conatiner">
+        <div class="projects-card"><a href="http://localhost:5173/"><img src="../images/Movie.png"></a></div>
+        <div class="projects-card"><a href="http://127.0.0.1:5501/index.html"><img src="../images/Screenshot 2024-01-24 154456.png"></a></div>
+        <div class="projects-card"><a href="http://localhost:5173/"><img src="../images/Screenshot 2024-01-24 154557.png"></a></div>
+      </div>
+      
+    </section>
+    <section class="language">
+      <div class="headinh"><h2>Languages I know</h2></div>
+      <div class="skills_items">
+
+        <div class="skills_card">
+            <h3 class="skills_tagname">Frontend</h3>
+            <div class="items">
+                <span id="br-none">HTML</span>
+                <span id="br-blue">CSS</span>
+                <span id="br-yellow">JavaScript</span>
+                <span id="br-green">XML & Kotlin</span>
+                <span id="br-purple">Bootstrap</span>
+            </div>
+        </div>
+        
+        <div class="skills_card">
+            <h3 class="skills_tagname">Backend</h3>
+            <div class="items">
+                <span id="br-green">Kotlin</span>
+                <span id="br-blue">Node JS</span>
+                <span id="br-red">Express JS</span>
+            </div>
+        </div>
+        
+        <div class="skills_card">
+            <h3 class="skills_tagname">Database</h3>
+            <div class="items">
+                <span id="br-yellow">Firebase</span>
+                <span id="br-purple">My Sql</span>
+            </div>
+        </div>
+    </div>
+        
+      </section>
+      
+    </section>
+    <footer>
+      <div class="contact-me">
+        <h2>Contact Me</h2>
+        <p>I'm currently available for new projects and would love to hear from you. Please use the form below to get in touch or email me directly at <a href="mailto:youremail@example.com">shivampal7006@gmail.com</a>.</p>
+        <form action="/contact" method="post">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+      <div class="coppyright">
+        <div class="copyright">
+          <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+        <div class="social-media">
+          <h3>Follow Me</h3>
+          <img id="ld" onclick="social(this.id)"   src="../images/linkedin.svg" alt="Linkedin">
+                <img id="fb" onclick="social(this.id)" src="../images/facebook.svg" alt="Facebook">
+                <img id="gh" onclick="social(this.id)" src="../images/github.svg" alt="Github">
+                <img id="ig" onclick="social(this.id)" src="../images/insta.svg" alt="Instagram">
+        </div>
+      </div>
+      
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
